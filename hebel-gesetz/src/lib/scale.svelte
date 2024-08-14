@@ -26,54 +26,60 @@
   }
 </script>
 
-<div class="flex justify-start flex-col items-center py-20">
+<div class="flex justify-start flex-col items-center py-20 p-5">
   <div
-    class=" bg-orange-500 scale absolute top-40 w-full h-24 md:w-3/4 flex transition-transform justify-between items-start overflow-y-visible p-5"
+    class=" bg-orange-500 rounded-md relative z-10 w-full rotate h-24 md:w-2/4 flex transition-transform justify-between items-start overflow-y-visible p-5"
     style="--tilt:{tilt}"
   >
     {#each left as _, index}
-      <div class="flex justify-center items-center flex-col">
+      <div>
         <button
-          class="size-10 bg-white p-1 rounded-full transition-transform active:scale-110"
+          class="size-10 bg-white p-1 rounded-full mb-2 transition-transform active:scale-110"
           on:click={() => {
             if (left[index] == 4) return;
             left[index] = left[index] + 1;
           }}
         >
           <img src="/add.svg" alt="" />
+        </button>
+        <div class="rotate-reverse transition-transform h-0 overflow-y-visible">
           {#each Array(left[index]) as _}
-            <div class="flex justify-center w-12 flex-col items-center">
-              <div class="w-4 h-12 bg-zinc-700 mx-auto"></div>
+            <div class="flex justify-center w-12 flex-col items-center mx-auto">
+              <div class="w-4 h-12 bg-zinc-700 mx-auto rounded-t-md"></div>
               <div class="bg-orange-700 size-12 rounded-md mx-auto"></div>
             </div>
           {/each}
-        </button>
+        </div>
       </div>
     {/each}
     <div class="bg-zinc-800 p-5 rounded-full"></div>
     {#each right as _, index}
       <div>
         <button
-          class="size-10 bg-white p-1 rounded-full transition-transform active:scale-110"
+          class="size-10 bg-white p-1 rounded-full mb-2 transition-transform active:scale-110"
           on:click={() => {
             if (right[index] == 4) return;
             right[index] = right[index] + 1;
           }}
         >
           <img src="/add.svg" alt="" />
+        </button>
+        <div class="rotate-reverse h-0 transition-transform overflow-y-visible">
           {#each Array(right[index]) as _}
-            <div class="flex justify-center w-12 flex-col items-center">
-              <div class="w-4 h-12 bg-zinc-700 mx-auto"></div>
+            <div class="flex justify-center w-12 flex-col items-center mx-auto">
+              <div class="w-4 h-12 bg-zinc-700 mx-auto rounded-t-md"></div>
               <div class="bg-orange-700 size-12 rounded-md mx-auto"></div>
             </div>
           {/each}
-        </button>
+        </div>
       </div>
     {/each}
   </div>
-  <div class="bg-zinc-800 h-[70vh] w-24"></div>
+  <div
+    class="bg-zinc-800 h-96 xl:h-[60vh] rounded-md -translate-y-20 relative z-0 w-24"
+  ></div>
   <button
-    class="bg-gradient-to-r from-orange-500 to-yellow-500 m-5 p-2 text-xl font-poppins rounded-md transition-transform active:scale-110"
+    class="bg-gradient-to-r from-orange-500 -translate-y-20 to-yellow-500 m-5 p-2 text-xl font-poppins rounded-md transition-transform active:scale-110"
     on:click={() => {
       left = [0, 0, 0];
       right = [0, 0, 0];
@@ -82,7 +88,10 @@
 </div>
 
 <style>
-  .scale {
+  .rotate {
     transform: rotate(calc(var(--tilt) * 1deg));
+  }
+  .rotate-reverse {
+    transform: rotate(calc(var(--tilt) * -1deg));
   }
 </style>
