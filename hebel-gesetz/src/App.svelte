@@ -4,10 +4,11 @@
   import Paragraph from "./lib/paragraph.svelte"
 </script>
 
+<h1 class="text-5xl md:text-7xl font-poppins font-bold text-center text-transparent bg-gradient-to-t from-orange-500 to-yellow-500 bg-clip-text w-full p-2">Das Hebelgesetz</h1>
 
 <Scale />
 <div class="-translate-y-20">
-  <Paragraph title="Das Hebelgesetz " text="Alle Hebel drehen sich um einen Punkt, genannt Drehpunkt. Die Hebelarme eines Hebels beschriftet man l1 und l2. Für das Hebelgesetz wichtig ist das Produkt von l * F. In der Formel beschreibt l den Abstand zwischen Drehpunkt und dem Gewicht, das am zugehörigen Hebelarm hängt. Diese Formel kann man brauchen, um zu entscheiden, ob ein Hebelarm ausgeglichen ist.
+  <Paragraph title="" text="Alle Hebel drehen sich um einen Punkt, genannt Drehpunkt. Die Hebelarme eines Hebels beschriftet man l1 und l2. Für das Hebelgesetz wichtig ist das Produkt von l * F. In der Formel beschreibt l den Abstand zwischen Drehpunkt und dem Gewicht, das am zugehörigen Hebelarm hängt. Diese Formel kann man brauchen, um zu entscheiden, ob ein Hebelarm ausgeglichen ist.
 "/>
 <Paragraph title="Ausgeglichene Hebel" text="Wenn das Produkt Kraft und Hebelarm beider Arme gleich groß ist, ist der Hebel ausgeglichen. Ein Beispiel davon ist eine Wippe, wenn zwei gleich schwere Kinder auf beiden Seiten sitzen, ist die Wippe ausgeglichen."/>
 <Paragraph title="Kraft- und Lastarm" text="Diese Gesetzlichkeiten können aber auch gebraucht werden, um Kraft zu sparen.  Man unterscheidet zwischen Kraft- und Lastarm. Der Lastarm ist der Hebelarm, auf der sich die zu bewegende Last befindet, bei einer Astschere sind das die Klingen, der Kraftarm ist der Hebelarm, der versucht die Last zu bewegen, bei einer Astschere ist das der Griff. Der Lastarm muss dabei immer kürzer sein als der Kraftarm, damit das Produkt von dem Kraftarm * F gleich groß ist wie Lastarm * F, obwohl weniger Gewicht am Kraftarm hängt. Deshalb nennt man Hebel auch Kraftwandler."/>
