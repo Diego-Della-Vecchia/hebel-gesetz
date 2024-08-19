@@ -26,7 +26,7 @@
   }
 </script>
 
-<div class="flex justify-start flex-col items-center py-20 p-5">
+<div class="flex justify-start flex-col items-center pt-20 p-5">
   <div
     class=" bg-orange-500 rounded-md relative z-10 w-full rotate h-24 md:w-2/4 flex transition-transform justify-between items-start overflow-y-visible p-5"
     style="--tilt:{tilt}"

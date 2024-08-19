@@ -1,6 +1,7 @@
 <script lang="ts">
   import Scale from "./lib/scale.svelte";
   import "./app.css";
+  import Paragraph from "./lib/paragraph.svelte"
 </script>
 
 <h1
@@ -9,5 +10,7 @@
   Das Hebel Gesetz
 </h1>
 <Scale />
+<div class="-translate-y-20">
 
+</div>
 <style lang="postcss"></style>
