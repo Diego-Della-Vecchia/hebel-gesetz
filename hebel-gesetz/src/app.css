@@ -2,3 +2,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-webkit-scrollbar {
+    @apply bg-orange-500
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-yellow-500 rounded-full
+}

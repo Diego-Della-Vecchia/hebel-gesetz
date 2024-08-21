@@ -76,7 +76,7 @@
     {/each}
   </div>
   <div
-    class="bg-zinc-800 h-96 xl:h-[60vh] rounded-md -translate-y-20 relative z-0 w-24"
+    class="bg-zinc-800 h-96  rounded-md -translate-y-20 relative z-0 w-24"
   ></div>
   <button
     class="bg-gradient-to-r from-orange-500 -translate-y-20 to-yellow-500 m-5 p-2 text-xl font-poppins rounded-md transition-transform active:scale-110"
