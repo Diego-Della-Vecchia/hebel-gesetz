@@ -1,20 +1,15 @@
 <script>
-  let left = [0, 0, 0];
-  let right = [0, 0, 0];
+ import {left, right} from "./store"
   let tilt = 0;
 
-  function calculateTotals() {
-    let leftTotal = 0;
+
+   $: {
+   let leftTotal = 0;
     let rightTotal = 0;
     for (let i = 0; i < 3; i++) {
-      leftTotal += left[i] * (left.length - i);
-      rightTotal += right[i] * (i + 1);
+      leftTotal += $left[i] * ($left.length - i);
+      rightTotal += $right[i] * (i + 1);
     }
-    return { leftTotal, rightTotal };
-  }
-
-  $: {
-    const { leftTotal, rightTotal } = calculateTotals();
     tilt = Math.min(
       90,
       leftTotal > rightTotal
@@ -22,8 +17,7 @@
         : (rightTotal - leftTotal) * 10,
     );
     tilt = leftTotal > rightTotal ? -tilt : tilt;
-    console.log(left, right, leftTotal, rightTotal);
-  }
+   }  
 </script>
 
 <div class="flex justify-start flex-col items-center pt-20 p-5">
@@ -31,19 +25,21 @@
     class=" bg-orange-500 rounded-md relative z-10 w-full rotate h-24 md:w-2/4 flex transition-transform justify-between items-start overflow-y-visible p-5"
     style="--tilt:{tilt}"
   >
-    {#each left as _, index}
+    {#each $left as _, index}
       <div>
         <button
           class="size-10 bg-white p-1 rounded-full mb-2 transition-transform active:scale-110"
           on:click={() => {
-            if (left[index] == 4) return;
-            left[index] = left[index] + 1;
-          }}
+            if ($left[index] == 4) return;
+            left.update((n)=> {
+              n[index] += 1
+              return n
+            });          }}
         >
           <img src="/add.svg" alt="" />
         </button>
         <div class="rotate-reverse transition-transform h-0 overflow-y-visible">
-          {#each Array(left[index]) as _}
+          {#each Array($left[index]) as _}
             <div class="flex justify-center w-12 flex-col items-center mx-auto">
               <div class="w-4 h-12 bg-zinc-700 mx-auto rounded-t-md"></div>
               <div class="bg-orange-700 size-12 rounded-md mx-auto"></div>
@@ -53,19 +49,22 @@
       </div>
     {/each}
     <div class="bg-zinc-800 p-5 rounded-full"></div>
-    {#each right as _, index}
+    {#each $right as _, index}
       <div>
         <button
           class="size-10 bg-white p-1 rounded-full mb-2 transition-transform active:scale-110"
           on:click={() => {
-            if (right[index] == 4) return;
-            right[index] = right[index] + 1;
+            if ($right[index] == 4) return;
+            right.update((n)=> {
+              n[index] += 1
+              return n
+            });
           }}
         >
           <img src="/add.svg" alt="" />
         </button>
         <div class="rotate-reverse h-0 transition-transform overflow-y-visible">
-          {#each Array(right[index]) as _}
+          {#each Array($right[index]) as _}
             <div class="flex justify-center w-12 flex-col items-center mx-auto">
               <div class="w-4 h-12 bg-zinc-700 mx-auto rounded-t-md"></div>
               <div class="bg-orange-700 size-12 rounded-md mx-auto"></div>
@@ -81,8 +80,9 @@
   <button
     class="bg-gradient-to-r from-orange-500 -translate-y-20 to-yellow-500 m-5 p-2 text-xl font-poppins rounded-md transition-transform active:scale-110"
     on:click={() => {
-      left = [0, 0, 0];
-      right = [0, 0, 0];
+     left.update(()=> [0,0,0] )
+     right.update(()=> [0,0,0] )
+
     }}>Zurücksetzen</button
   >
 </div>
