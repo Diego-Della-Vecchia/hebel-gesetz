@@ -29,6 +29,7 @@
 
     left.set(leftSide);
     right.set(rightSide);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   function unBalance() {
@@ -55,6 +56,7 @@
 
     left.set(leftSide);
     right.set(rightSide);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 </script>
 
