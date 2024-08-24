@@ -13,8 +13,8 @@
 
     while (!balanced) {
       for (let i = 0; i < 3; i++) {
-        leftSide[i] = Math.floor(Math.random() * 4) + 1;
-        rightSide[i] = Math.floor(Math.random() * 4) + 1;
+        leftSide[i] = Math.floor(Math.random() * 5);
+        rightSide[i] = Math.floor(Math.random() * 5);
       }
 
       let leftTotal = 0;
@@ -40,8 +40,8 @@
 
     while (!balanced) {
       for (let i = 0; i < 3; i++) {
-        leftSide[i] = Math.floor(Math.random() * 4) + 1;
-        rightSide[i] = Math.floor(Math.random() * 4) + 1;
+        leftSide[i] = Math.floor(Math.random() * 5);
+        rightSide[i] = Math.floor(Math.random() * 5);
       }
 
       let leftTotal = 0;
