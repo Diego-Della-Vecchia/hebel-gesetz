@@ -51,7 +51,15 @@
         rightTotal += rightSide[i] * (i + 1);
       }
 
-      if (leftTotal != rightTotal) balanced = true;
+      let tilt = Math.min(
+        90,
+        leftTotal > rightTotal
+          ? (leftTotal - rightTotal) * 10
+          : (rightTotal - leftTotal) * 10,
+      );
+      tilt = leftTotal > rightTotal ? -tilt : tilt;
+
+      if (leftTotal != rightTotal && tilt < 60 && tilt > -60) balanced = true;
     }
 
     left.set(leftSide);

@@ -1,10 +1,9 @@
 <script>
- import {left, right} from "./store"
+  import { left, right } from "./store";
   let tilt = 0;
 
-
-   $: {
-   let leftTotal = 0;
+  $: {
+    let leftTotal = 0;
     let rightTotal = 0;
     for (let i = 0; i < 3; i++) {
       leftTotal += $left[i] * ($left.length - i);
@@ -17,10 +16,10 @@
         : (rightTotal - leftTotal) * 10,
     );
     tilt = leftTotal > rightTotal ? -tilt : tilt;
-   }  
+  }
 </script>
 
-<div class="flex justify-start flex-col items-center pt-20 p-5">
+<div class="flex justify-start flex-col items-center pt-20 p-5 overflow-x-clip">
   <div
     class=" bg-orange-500 rounded-md relative z-10 w-full rotate h-24 md:w-2/4 flex transition-transform justify-between items-start overflow-y-visible p-5"
     style="--tilt:{tilt}"
@@ -31,10 +30,11 @@
           class="size-10 bg-white p-1 rounded-full mb-2 transition-transform active:scale-110"
           on:click={() => {
             if ($left[index] == 4) return;
-            left.update((n)=> {
-              n[index] += 1
-              return n
-            });          }}
+            left.update((n) => {
+              n[index] += 1;
+              return n;
+            });
+          }}
         >
           <img src="/add.svg" alt="" />
         </button>
@@ -55,9 +55,9 @@
           class="size-10 bg-white p-1 rounded-full mb-2 transition-transform active:scale-110"
           on:click={() => {
             if ($right[index] == 4) return;
-            right.update((n)=> {
-              n[index] += 1
-              return n
+            right.update((n) => {
+              n[index] += 1;
+              return n;
             });
           }}
         >
@@ -75,14 +75,13 @@
     {/each}
   </div>
   <div
-    class="bg-zinc-800 h-96  rounded-md -translate-y-20 relative z-0 w-24"
+    class="bg-zinc-800 h-96 rounded-md -translate-y-20 relative z-0 w-24"
   ></div>
   <button
     class="bg-gradient-to-r from-orange-500 -translate-y-20 to-yellow-500 m-5 p-2 text-xl font-poppins rounded-md transition-transform active:scale-110"
     on:click={() => {
-     left.update(()=> [0,0,0] )
-     right.update(()=> [0,0,0] )
-
+      left.update(() => [0, 0, 0]);
+      right.update(() => [0, 0, 0]);
     }}>Zurücksetzen</button
   >
 </div>
