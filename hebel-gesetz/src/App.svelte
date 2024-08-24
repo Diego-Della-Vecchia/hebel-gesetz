@@ -2,8 +2,9 @@
   import Scale from "./lib/scale.svelte";
   import "./app.css";
   import Paragraph from "./lib/paragraph.svelte";
-  import Rechnung from "./lib/rechnung.svelte";
+  import Table from "./lib/table.svelte";
   import { left, right } from "./lib/store";
+  import Images from "./lib/images.svelte";
 
   function Balance() {
     const leftSide: [number, number, number] = [0, 0, 0];
@@ -89,15 +90,15 @@
   <p class="text-center font-popppins font-bold p-2 text-orange-500 text-xl">
     Beispiele von ausgeglichenen Hebeln
   </p>
-  <Rechnung
-    formel={[
+  <Table
+    formels={[
       [2, 6, 1, 12],
       [4, 2, 1, 8],
       [5, 4, 4, 5],
       [1, 6, 2, 3],
       [1, 20, 4, 5],
     ]}
-  ></Rechnung>
+  ></Table>
   <button
     class="text-xl font-poppins rounded-md bg-gradient-to-r from-orange-500 to-yellow-500 p-2 block mx-auto m-5 active:scale-110 transition-transform"
     on:click={Balance}>Hebel ausgleichen</button
@@ -109,15 +110,15 @@
   <p class="text-center font-popppins font-bold p-2 text-orange-500 text-xl">
     Beispiele von unausgeglichenen Hebeln
   </p>
-  <Rechnung
-    formel={[
+  <Table
+    formels={[
       [2, 7, 1, 9],
       [3, 4, 2, 7],
       [8, 1, 3, 5],
       [6, 3, 2, 14],
       [5, 2, 3, 4],
     ]}
-  ></Rechnung>
+  ></Table>
   <button
     class="text-xl font-poppins rounded-md bg-gradient-to-r from-orange-500 to-yellow-500 p-2 block mx-auto m-5 active:scale-110 transition-transform"
     on:click={unBalance}>Hebel unausgleichen</button
