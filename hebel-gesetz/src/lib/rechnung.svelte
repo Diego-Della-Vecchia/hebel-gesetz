@@ -6,7 +6,7 @@
     <table class="w-96 text-xl  font-serif bg-gray-200 rounded-md p-2">
         <thead>
             <th class="w-12 border-black border-2">
-                N
+                Gewicht
             </th>
             <th class="w-12 border-black border-2">
                 Position
@@ -15,7 +15,7 @@
                 N
             </th>
             <th class="w-12 border-black border-2">
-                Position
+                Gewicht
             </th>
 </thead>
 {#each  formel as formel}
