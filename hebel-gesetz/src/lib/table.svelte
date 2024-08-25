@@ -7,23 +7,24 @@
     <thead>
       <th class="w-12 border-black border-2"> Gewicht </th>
       <th class="w-12 border-black border-2"> Position </th>
-      <th class="w-12 border-black border-2"> N </th>
       <th class="w-12 border-black border-2"> Gewicht </th>
+      <th class="w-12 border-black border-2"> Position </th>
     </thead>
     {#each formels as formel}
-      <tr>
-        <th class="w-12 border-black border-2">
+      <tr class="text-center text-xl">
+        <td class="w-12 p-1 border-black border-2">
           {formel[0]}
-        </th>
-        <th class="w-12 border-black border-2">
+        </td>
+        <td class="w-12 p-1 border-black border-2">
           {formel[1]}
-        </th>
-        <th class="w-12 border-black border-2">
-          {formel[2]}
-        </th>
-        <th class="w-12 border-black border-2">
+        </td>
+
+        <td class="w-12 p-1 border-black border-2">
           {formel[3]}
-        </th>
+        </td>
+        <td class="w-12 p-1 border-black border-2">
+          {formel[2]}
+        </td>
       </tr>
     {/each}
   </table>
