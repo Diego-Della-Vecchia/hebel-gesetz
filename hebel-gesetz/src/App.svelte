@@ -12,7 +12,9 @@
 
     let balanced = false;
 
-    while (!balanced) {
+    let reversed = [0, 0, 0];
+
+    while (!balanced || JSON.stringify(leftSide) == JSON.stringify(reversed)) {
       for (let i = 0; i < 3; i++) {
         leftSide[i] = Math.floor(Math.random() * 5);
         rightSide[i] = Math.floor(Math.random() * 5);
@@ -25,7 +27,13 @@
         rightTotal += rightSide[i] * (i + 1);
       }
 
-      if (leftTotal == rightTotal) balanced = true;
+      reversed = [...rightSide].reverse();
+
+      if (
+        leftTotal == rightTotal &&
+        JSON.stringify(leftSide) != JSON.stringify(reversed)
+      )
+        balanced = true;
     }
 
     left.set(leftSide);
@@ -37,9 +45,9 @@
     const leftSide: [number, number, number] = [0, 0, 0];
     const rightSide: [number, number, number] = [0, 0, 0];
 
-    let balanced = false;
+    let balanced = true;
 
-    while (!balanced) {
+    while (balanced && leftSide.reverse() != rightSide) {
       for (let i = 0; i < 3; i++) {
         leftSide[i] = Math.floor(Math.random() * 5);
         rightSide[i] = Math.floor(Math.random() * 5);
@@ -60,7 +68,7 @@
       );
       tilt = leftTotal > rightTotal ? -tilt : tilt;
 
-      if (leftTotal != rightTotal && tilt < 60 && tilt > -60) balanced = true;
+      if (leftTotal != rightTotal && tilt < 60 && tilt > -60) balanced = false;
     }
 
     left.set(leftSide);

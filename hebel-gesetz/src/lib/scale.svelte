@@ -21,13 +21,13 @@
 
 <div class="flex justify-start flex-col items-center pt-20 p-5 overflow-x-clip">
   <div
-    class=" bg-orange-500 rounded-md relative z-10 w-full rotate h-24 md:w-2/4 flex transition-transform justify-between items-start overflow-y-visible p-5"
+    class=" bg-orange-500 rounded-md relative z-10 w-full rotate h-24 xl:w-1/3 md:w-2/4 flex transition-transform justify-between items-start overflow-y-visible p-5"
     style="--tilt:{tilt}"
   >
     {#each $left as _, index}
       <div>
         <button
-          class="size-10 bg-white p-1 rounded-full mb-2 transition-transform active:scale-110"
+          class="size-12 bg-white p-1 rounded-full mb-2 transition-transform active:scale-110"
           on:click={() => {
             if ($left[index] == 4) return;
             left.update((n) => {
@@ -52,7 +52,7 @@
     {#each $right as _, index}
       <div>
         <button
-          class="size-10 bg-white p-1 rounded-full mb-2 transition-transform active:scale-110"
+          class="size-12 bg-white p-1 rounded-full mb-2 transition-transform active:scale-110"
           on:click={() => {
             if ($right[index] == 4) return;
             right.update((n) => {
