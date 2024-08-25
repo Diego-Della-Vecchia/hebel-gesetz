@@ -27,7 +27,7 @@
     {#each $left as _, index}
       <div>
         <button
-          class="size-12 bg-white p-1 rounded-full mb-2 transition-transform active:scale-110"
+          class="size-10 bg-white p-1 rounded-full mb-2 transition-transform active:scale-110"
           on:click={() => {
             if ($left[index] == 4) return;
             left.update((n) => {
@@ -42,7 +42,7 @@
           {#each Array($left[index]) as _}
             <div class="flex justify-center w-12 flex-col items-center mx-auto">
               <div class="w-4 h-12 bg-zinc-700 mx-auto rounded-t-md"></div>
-              <div class="bg-orange-700 size-12 rounded-md mx-auto"></div>
+              <div class="bg-orange-700 size-10 rounded-md mx-auto"></div>
             </div>
           {/each}
         </div>
@@ -52,7 +52,8 @@
     {#each $right as _, index}
       <div>
         <button
-          class="size-12 bg-white p-1 rounded-full mb-2 transition-transform active:scale-110"
+          class="size-10
+0bg-white p-1 rounded-full mb-2 transition-transform active:scale-110"
           on:click={() => {
             if ($right[index] == 4) return;
             right.update((n) => {
@@ -67,7 +68,7 @@
           {#each Array($right[index]) as _}
             <div class="flex justify-center w-12 flex-col items-center mx-auto">
               <div class="w-4 h-12 bg-zinc-700 mx-auto rounded-t-md"></div>
-              <div class="bg-orange-700 size-12 rounded-md mx-auto"></div>
+              <div class="bg-orange-700 size-10 rounded-md mx-auto"></div>
             </div>
           {/each}
         </div>
