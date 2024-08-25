@@ -52,8 +52,7 @@
     {#each $right as _, index}
       <div>
         <button
-          class="size-10
-0bg-white p-1 rounded-full mb-2 transition-transform active:scale-110"
+          class="size-10 bg-white p-1 rounded-full mb-2 transition-transform active:scale-110"
           on:click={() => {
             if ($right[index] == 4) return;
             right.update((n) => {
