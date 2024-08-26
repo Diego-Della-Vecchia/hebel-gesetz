@@ -40,7 +40,7 @@
         </button>
         <div class="rotate-reverse transition-transform h-0 overflow-y-visible">
           {#each Array($left[index]) as _}
-            <div class="flex justify-center w-12 flex-col items-center mx-auto">
+            <div class="flex justify-center w-10 flex-col items-center mx-auto">
               <div class="w-4 h-12 bg-zinc-700 mx-auto rounded-t-md"></div>
               <div class="bg-orange-700 size-10 rounded-md mx-auto"></div>
             </div>
@@ -65,7 +65,7 @@
         </button>
         <div class="rotate-reverse h-0 transition-transform overflow-y-visible">
           {#each Array($right[index]) as _}
-            <div class="flex justify-center w-12 flex-col items-center mx-auto">
+            <div class="flex justify-center w-10 flex-col items-center mx-auto">
               <div class="w-4 h-12 bg-zinc-700 mx-auto rounded-t-md"></div>
               <div class="bg-orange-700 size-10 rounded-md mx-auto"></div>
             </div>
