@@ -2,13 +2,11 @@
   export let images: string[][];
 </script>
 
-<div class="flex justify-center items-center overflow-x-auto p-5">
-  <div class="flex gap-2 items-center">
+<div class="overflow-x-auto p-5  flex w-full  mx-auto items-center">
     {#each images as image}
-    <div>
-      <img class="rounded-md border-2 border-black h-32" src={image[0]} alt="" />
+    <div class="p-5 flex-shrink-0 mx-auto">
+      <img class="rounded-md h-32  border-2 border-black" src={image[0]} alt="" />
       <p class="font-poppins text-center text-xl text-orange-500">{image[1]}</p>
     </div>
     {/each}
-  </div>
 </div>
