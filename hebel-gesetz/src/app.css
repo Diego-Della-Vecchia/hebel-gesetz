@@ -10,3 +10,8 @@
 ::-webkit-scrollbar-thumb {
     @apply bg-yellow-500 rounded-full
 }
+
+::selection {
+    background-color: #f97316;
+    color: white;
+}
