@@ -131,10 +131,14 @@
     class="text-xl font-poppins rounded-md bg-gradient-to-r from-orange-500 to-yellow-500 p-2 block mx-auto m-5 active:scale-110 transition-transform"
     on:click={unBalance}>Hebel unausgleichen</button
   >
+  <Images images={["https://www.jungheinrich-profishop.ch/wp-content/uploads/2022/05/Jungheinrich-Grafik-Nr.-125-Hebelkraft-berechnen-02-1024x534.jpg"]}/>
+
   <Paragraph
-    title="Hebelarte"
+    title="Arten von Hebeln"
     text="Weiter unterscheidet man zwischen einseitigen und zweiseitigen Hebeln. Wenn beide Hebel sich auf der gleichen Seite befinden, bezeichnet man dies als einseitiger Hebel, wenn das nicht der Fall ist, spricht man jedoch von einem zweiseitigen Hebel. Als Beispiele für zweiseitige Hebel zählen Wippen, Astscheren, Waage, Zange, einseitige Hebel sind zum Beispiel Nussknacker, Türklinken, Flaschenöffner und Schubkarren."
   />
+  <Images images={["https://physics.lakschool.com/de/themen/mechanik_hebel/images/zweiseitiger_hebel.png","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwJB8XOIc_XI_jO8N3QGu3u03fO9ziySJ1_g&s"]}/>
+
 </div>
 
 <style lang="postcss"></style>
