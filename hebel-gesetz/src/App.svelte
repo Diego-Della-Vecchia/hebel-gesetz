@@ -113,7 +113,7 @@
   >
   <Paragraph
     title="Kraft- und Lastarm"
-    text={[[{text : "Diese Gesetzlichkeiten können aber auch gebraucht werden, um Kraft zu sparen.  Man unterscheidet zwischen Kraft- und Lastarm. Der Lastarm ist der Hebelarm, auf der sich die zu bewegende Last befindet, bei einer Astschere sind das die Klingen, der Kraftarm ist der Hebelarm, der versucht die Last zu bewegen, bei einer Astschere ist das der Griff.", type : ""}], [{text : "Um Kraft zu sparen, muss der Lastarm dabei immer kürzer sein als der Kraftarm, damit das Produkt von ", type : ""}, {text: "Kraftarm * F", type : "formel"}, {text: " gleich groß ist wie ", type : "" }, {text: "Lastarm * F", type : "formel"},{text: " obwohl weniger Gewicht am Kraftarm hängt. Deshalb nennt man Hebel auch Kraftwandler.", type : ""}]]}
+    text={[[{text : "Das Hebelgesetz kann aber auch gebraucht werden, um Kraft zu sparen.  Man unterscheidet zwischen Kraft- und Lastarm. Der Lastarm ist der Hebelarm, auf der sich die zu bewegende Last befindet, bei einer Astschere sind das die Klingen, der Kraftarm ist der Hebelarm, der versucht die Last zu bewegen, bei einer Astschere ist das der Griff.", type : ""}], [{text : "Um Kraft zu sparen, muss der Lastarm dabei immer kürzer sein als der Kraftarm, damit das Produkt von ", type : ""}, {text: "Kraftarm * F", type : "formel"}, {text: " gleich groß ist wie ", type : "" }, {text: "Lastarm * F", type : "formel"},{text: " obwohl weniger Kraft auf Kraftarm wirkt. Deshalb nennt man Hebel auch Kraftwandler.", type : ""}]]}
   />
   <p class="text-center font-popppins font-bold p-2 text-orange-500 text-xl">
     Beispiele von unausgeglichenen Hebeln
@@ -129,7 +129,7 @@
   ></Table>
   <button
     class="text-xl font-poppins rounded-md bg-gradient-to-r from-orange-500 to-yellow-500 p-2 block mx-auto m-5 active:scale-110 transition-transform"
-    on:click={unBalance}>Hebel unausgleichen</button
+    on:click={unBalance}>Hebel kippen</button
   >
   <Images images={[["https://www.jungheinrich-profishop.ch/wp-content/uploads/2022/05/Jungheinrich-Grafik-Nr.-125-Hebelkraft-berechnen-02-1024x534.jpg", ""]]}/>
 
