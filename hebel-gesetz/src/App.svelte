@@ -87,13 +87,13 @@
 <div class="-translate-y-20">
   <Paragraph
     title=""
-    text={[[{text: "Alle Hebel drehen sich um einen Punkt, genannt Drehpunkt. Die Hebelarme eines Hebels beschriftet man l1 und l2. Für das Hebelgesetz wichtig ist das Produkt von l * F.", type: ""}], [{text : "In der Formel beschreibt l den Abstand zwischen Drehpunkt und dem Gewicht, das am zugehörigen Hebelarm hängt. Diese Formel kann man brauchen, um zu entscheiden, ob ein Hebelarm ausgeglichen ist.", type : ""}]]}
+    text={[[{text: "Alle Hebel drehen sich um einen Punkt, genannt Drehpunkt. Die Hebelarme eines Hebels beschriftet man ", type : ""},{ text : "l1 und l2.", type : "formel"},  {text : " Für das Hebelgesetz entscheidend ist das Produkt von ", type : ""},{text :   "l * F.", type: "formel"}], [{text : "In der Formel beschreibt ", type : ""}, {text: "l", type : "formel"}, {text : " den Abstand zwischen Drehpunkt und der Kraft, also dem Gewicht, das am zugehörigen Hebelarm hängt. ", type : ""}, {text : "F", type : "formel"}, {text: " steht für die Kraft die auf den jeweiligen Hebel wirkt. ", type : ""}, {text: "Diese Formel kann verwendet werden, um zu entscheiden, ob ein Hebelarm ausgeglichen ist.", type : ""}]]}
 
   />
 
   <Paragraph
     title="Ausgeglichene Hebel"
-    text={[[{text : "Wenn das Produkt Kraft und Hebelarm beider Arme gleich groß ist, ist der Hebel ausgeglichen. Ein Beispiel davon ist eine Wippe, wenn zwei gleich schwere Kinder auf beiden Seiten sitzen, ist die Wippe ausgeglichen.", type : ""}]]}
+    text={[[{text : "Wenn das Produkt von Kraft und Hebelarm beider Arme gleich groß ist, ist der Hebel ausgeglichen. Ein Beispiel davon ist eine Wippe, wenn zwei gleich schwere Kinder auf beiden Seiten sitzen, ist die Wippe ausgeglichen.", type : ""}]]}
   />
   <p class="text-center font-popppins font-bold p-2 text-orange-500 text-xl">
     Beispiele von ausgeglichenen Hebeln
@@ -113,7 +113,7 @@
   >
   <Paragraph
     title="Kraft- und Lastarm"
-    text={[[{text : "Diese Gesetzlichkeiten können aber auch gebraucht werden, um Kraft zu sparen.  Man unterscheidet zwischen Kraft- und Lastarm. Der Lastarm ist der Hebelarm, auf der sich die zu bewegende Last befindet, bei einer Astschere sind das die Klingen, der Kraftarm ist der Hebelarm, der versucht die Last zu bewegen, bei einer Astschere ist das der Griff.", type : ""}], [{text : " Der Lastarm muss dabei immer kürzer sein als der Kraftarm, damit das Produkt von dem Kraftarm * F gleich groß ist wie Lastarm * F, obwohl weniger Gewicht am Kraftarm hängt. Deshalb nennt man Hebel auch Kraftwandler.", type : ""}]]}
+    text={[[{text : "Diese Gesetzlichkeiten können aber auch gebraucht werden, um Kraft zu sparen.  Man unterscheidet zwischen Kraft- und Lastarm. Der Lastarm ist der Hebelarm, auf der sich die zu bewegende Last befindet, bei einer Astschere sind das die Klingen, der Kraftarm ist der Hebelarm, der versucht die Last zu bewegen, bei einer Astschere ist das der Griff.", type : ""}], [{text : "Um Kraft zu sparen, muss der Lastarm dabei immer kürzer sein als der Kraftarm, damit das Produkt von ", type : ""}, {text: "Kraftarm * F", type : "formel"}, {text: " gleich groß ist wie ", type : "" }, {text: "Lastarm * F", type : "formel"},{text: " obwohl weniger Gewicht am Kraftarm hängt. Deshalb nennt man Hebel auch Kraftwandler.", type : ""}]]}
   />
   <p class="text-center font-popppins font-bold p-2 text-orange-500 text-xl">
     Beispiele von unausgeglichenen Hebeln
