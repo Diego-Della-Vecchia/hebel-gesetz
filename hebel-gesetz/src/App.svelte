@@ -87,13 +87,49 @@
 <div class="-translate-y-20">
   <Paragraph
     title=""
-    text={[[{text: "Alle Hebel drehen sich um einen Punkt, genannt Drehpunkt. Die Hebelarme eines Hebels beschriftet man ", type : ""},{ text : "l1 und l2.", type : "formel"},  {text : " Für das Hebelgesetz entscheidend ist das Produkt von ", type : ""},{text :   "l * F.", type: "formel"}], [{text : "In der Formel beschreibt ", type : ""}, {text: "l", type : "formel"}, {text : " den Abstand zwischen Drehpunkt und der Kraft, also dem Gewicht, das am zugehörigen Hebelarm hängt. ", type : ""}, {text : "F", type : "formel"}, {text: " steht für die Kraft die auf den jeweiligen Hebel wirkt. ", type : ""}, {text: "Diese Formel kann verwendet werden, um zu entscheiden, ob ein Hebelarm ausgeglichen ist.", type : ""}]]}
-
+    text={[
+      [
+        {
+          text: "Alle Hebel drehen sich um einen Punkt, genannt Drehpunkt. Die Hebelarme eines Hebels beschriftet man ",
+          type: "",
+        },
+        { text: "l1 und l2.", type: "formel" },
+        {
+          text: " Für das Hebelgesetz entscheidend ist das Produkt von ",
+          type: "",
+        },
+        { text: "l * F.", type: "formel" },
+      ],
+      [
+        { text: "In der Formel beschreibt ", type: "" },
+        { text: "l", type: "formel" },
+        {
+          text: " den Abstand zwischen Drehpunkt und der Kraft, also dem Gewicht, das am zugehörigen Hebelarm hängt. ",
+          type: "",
+        },
+        { text: "F", type: "formel" },
+        {
+          text: " steht für die Kraft die auf den jeweiligen Hebel wirkt. ",
+          type: "",
+        },
+        {
+          text: "Diese Formel kann verwendet werden, um zu entscheiden, ob ein Hebelarm ausgeglichen ist.",
+          type: "",
+        },
+      ],
+    ]}
   />
 
   <Paragraph
     title="Ausgeglichene Hebel"
-    text={[[{text : "Wenn das Produkt von Kraft und Hebelarm beider Arme gleich groß ist, ist der Hebel ausgeglichen. Ein Beispiel davon ist eine Wippe, wenn zwei gleich schwere Kinder auf beiden Seiten sitzen, ist die Wippe ausgeglichen.", type : ""}]]}
+    text={[
+      [
+        {
+          text: "Wenn das Produkt von Kraft und Hebelarm beider Arme gleich groß ist, ist der Hebel ausgeglichen. Ein Beispiel davon ist eine Wippe, wenn zwei gleich schwere Kinder auf beiden Seiten sitzen, ist die Wippe ausgeglichen.",
+          type: "",
+        },
+      ],
+    ]}
   />
   <p class="text-center font-popppins font-bold p-2 text-orange-500 text-xl">
     Beispiele von ausgeglichenen Hebeln
@@ -113,7 +149,27 @@
   >
   <Paragraph
     title="Kraft- und Lastarm"
-    text={[[{text : "Das Hebelgesetz kann aber auch gebraucht werden, um Kraft zu sparen.  Man unterscheidet zwischen Kraft- und Lastarm. Der Lastarm ist der Hebelarm, auf der sich die zu bewegende Last befindet, bei einer Astschere sind das die Klingen, der Kraftarm ist der Hebelarm, der versucht die Last zu bewegen, bei einer Astschere ist das der Griff.", type : ""}], [{text : "Um Kraft zu sparen, muss der Lastarm dabei immer kürzer sein als der Kraftarm, damit das Produkt von ", type : ""}, {text: "Kraftarm * F", type : "formel"}, {text: " gleich groß ist wie ", type : "" }, {text: "Lastarm * F", type : "formel"},{text: " obwohl weniger Kraft auf Kraftarm wirkt. Deshalb nennt man Hebel auch Kraftwandler.", type : ""}]]}
+    text={[
+      [
+        {
+          text: "Das Hebelgesetz kann aber auch gebraucht werden, um Kraft zu sparen.  Man unterscheidet zwischen Kraft- und Lastarm. Der Lastarm ist der Hebelarm, auf der sich die zu bewegende Last befindet, bei einer Astschere sind das die Klingen, der Kraftarm ist der Hebelarm, der versucht die Last zu bewegen, bei einer Astschere ist das der Griff.",
+          type: "",
+        },
+      ],
+      [
+        {
+          text: "Um Kraft zu sparen, muss der Lastarm dabei immer kürzer sein als der Kraftarm, damit das Produkt von ",
+          type: "",
+        },
+        { text: "Kraftarm * F", type: "formel" },
+        { text: " gleich groß ist wie ", type: "" },
+        { text: "Lastarm * F", type: "formel" },
+        {
+          text: " obwohl weniger Kraft auf Kraftarm wirkt. Deshalb nennt man Hebel auch Kraftwandler.",
+          type: "",
+        },
+      ],
+    ]}
   />
   <p class="text-center font-popppins font-bold p-2 text-orange-500 text-xl">
     Beispiele von unausgeglichenen Hebeln
@@ -131,15 +187,44 @@
     class="text-xl font-poppins rounded-md bg-gradient-to-r from-orange-500 to-yellow-500 p-2 block mx-auto m-5 active:scale-110 transition-transform"
     on:click={unBalance}>Hebel kippen</button
   >
-  <Images images={[["https://www.jungheinrich-profishop.ch/wp-content/uploads/2022/05/Jungheinrich-Grafik-Nr.-125-Hebelkraft-berechnen-02-1024x534.jpg", ""]]}/>
+  <Images
+    images={[
+      [
+        "https://www.jungheinrich-profishop.ch/wp-content/uploads/2022/05/Jungheinrich-Grafik-Nr.-125-Hebelkraft-berechnen-02-1024x534.jpg",
+        "",
+      ],
+    ]}
+  />
 
   <Paragraph
     title="Arten von Hebeln"
-    text={[[{text  :"Weiter unterscheidet man zwischen einseitigen und zweiseitigen Hebeln. Wenn beide Hebel sich auf der gleichen Seite befinden, bezeichnet man dies als einseitiger Hebel, wenn das nicht der Fall ist, spricht man jedoch von einem zweiseitigen Hebel.", type : ""}], [{text : "Als Beispiele für zweiseitige Hebel zählen Wippen, Astscheren, Waage, Zange, einseitige Hebel sind zum Beispiel Nussknacker, Türklinken, Flaschenöffner und Schubkarren.", type : ""}]]}
+    text={[
+      [
+        {
+          text: "Weiter unterscheidet man zwischen einseitigen und zweiseitigen Hebeln. Wenn beide Hebel sich auf der gleichen Seite befinden, bezeichnet man dies als einseitiger Hebel, wenn das nicht der Fall ist, spricht man jedoch von einem zweiseitigen Hebel.",
+          type: "",
+        },
+      ],
+      [
+        {
+          text: "Als Beispiele für zweiseitige Hebel zählen Wippen, Astscheren, Waage, Zange, einseitige Hebel sind zum Beispiel Nussknacker, Türklinken, Flaschenöffner und Schubkarren.",
+          type: "",
+        },
+      ],
+    ]}
   />
-  <Images images={[["https://physics.lakschool.com/de/themen/mechanik_hebel/images/zweiseitiger_hebel.png", "Zweiseitiger Hebel"],
-  ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwJB8XOIc_XI_jO8N3QGu3u03fO9ziySJ1_g&s", "Einseitiger Hebel"]]}/>
-
+  <Images
+    images={[
+      [
+        "https://physics.lakschool.com/de/themen/mechanik_hebel/images/zweiseitiger_hebel.png",
+        "Zweiseitiger Hebel",
+      ],
+      [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwJB8XOIc_XI_jO8N3QGu3u03fO9ziySJ1_g&s",
+        "Einseitiger Hebel",
+      ],
+    ]}
+  />
 </div>
 
 <style lang="postcss"></style>
