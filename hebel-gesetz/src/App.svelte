@@ -201,7 +201,7 @@
     text={[
       [
         {
-          text: "Weiter unterscheidet man zwischen einseitigen und zweiseitigen Hebeln. Wenn beide Hebel sich auf der gleichen Seite befinden, bezeichnet man dies als einseitiger Hebel, wenn das nicht der Fall ist, spricht man jedoch von einem zweiseitigen Hebel.",
+          text: "Weiter unterscheidet man zwischen einseitigen und zweiseitigen Hebeln. Wenn beide Hebelarne sich auf der gleichen Seite befinden, bezeichnet man dies als einseitiger Hebel, wenn das nicht der Fall ist, spricht man jedoch von einem zweiseitigen Hebel.",
           type: "",
         },
       ],
